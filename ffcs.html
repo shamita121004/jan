@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shamita R - Electrical Engineer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            transition: margin-left 0.3s ease;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            height: 100%;
+            width: 200px;
+            position: fixed;
+            top: 0;
+            left: -200px;
+            transition: left 0.3s ease;
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+
+        nav a:hover {
+            background-color: black;
+        }
+
+        nav ul li:hover {
+            background-color: black;
+        }
+
+        .menu-button:hover {
+            background-color: black;
+        }
+
+        nav a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin-bottom: 5px;
+        }
+
+        section {
+            padding: 20px;
+            margin-left: 0;
+            margin-bottom: 100px;
+        }
+        
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            display: none;
+            justify-content: space-around;
+        }
+
+        .footer-column {
+            flex: 1;
+            padding: 0 10px;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                width: 100%;
+                height: auto;
+                position: relative;
+                padding-top: 0;
+                margin-bottom: 20px;
+                left: 0;
+            }
+
+            nav a {
+                padding: 10px;
+            }
+
+            section {
+                margin-left: 0;
+            }
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 48%;
+            margin-bottom: 15px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .contact-form textarea {
+            height: 100px;
+        }
+
+        .contact-form button {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #8B0000;
+            color: white;
+            border: none;
+            cursor: pointer;
+            box-sizing: border-box;
+        }
+
+        .contact-form button:hover {
+            background-color: rgb(76, 0, 139);
+        }
+
+        .social-media {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 15px;
+        }
+
+        .social-media a {
+            color: white;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+
+        .social-media img {
+            width: 30px;
+            height: auto;
+            margin-right: 5px;
+        }
+
+        .menu-button {
+            display: none;
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            z-index: 1;
+        }
+
+        .menu-button {
+            color: white;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #444;
+            min-width: 160px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        #top-right-image {
+    top: 10px;
+    right: 10px;
+    width: 250px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    border: 5px solid #000000; /* Add a 2px solid border with color #333 (adjust as needed) */
+    border-radius: 5px; /* Optional: Add border-radius for rounded corners */
+}
+
+
+    </style>
+    <header>
+        <h1>Shamita R - Electrical Engineer</h1>
+       
+    </header>
+</head>
+
+<body>
+    
+
+    <button class="menu-button" onclick="toggleMenu(event)">☰ Menu</button>
+
+    <nav>
+        <ul>
+            <li><a href="#home" onclick="toggleMenu(event)" title="Home">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu(event)" title="About Me">About Me</a></li>
+            <li class="dropdown">
+                <a href="#" title="Projects">Projects</a>
+                <div class="dropdown-content">
+                    <a href="#project1"
+" title="Project 1">Project 1</a>
+                    <a href="#project2" title="Project 2">Project 2</a>
+                </div>
+            </li>
+            <li><a href="#contact" onclick="toggleMenu(event)" title="Contact Me">Contact Me</a></li>
+            <!-- Inside your <nav> element -->
+<!-- Inside your <nav> element -->
+    <nav>
+        <ul>
+            <!-- ... (existing menu items) ... -->
+            <li><button onclick="openResume()" title="Resume">My Resume</button></li>
+            <li><a href="path/to/your/resume.pdf" target="_blank" title="Resume">My Resume</a></li>
+        </ul>
+    </nav>
+    
+
+        </ul>
+    </nav>
+<!-- Inside your <nav> element -->
+    <nav>
+        <ul>
+            <!-- ... (existing menu items) ... -->
+            <li><a href="path/to/your/resume.pdf" target="_blank" title="Resume">My Resume</a></li>
+        </ul>
+    </nav>
+    
+    
+
+    <section id="home" style="text-align: center; padding-bottom: 50px;">
+        <h2 style="font-weight: bold;">Welcome to my Portfolio</h2>
+        <!-- Your home content goes here -->
+        <img id="top-right-image" src="https://media.licdn.com/dms/image/D5603AQFos5fcx2a5gA/profile-displayphoto-shrink_200_200/0/1698507079766?e=1710979200&v=beta&t=qF0iHhhv8n92FEbhjIuT9ZFiduDGyr8UhcqchAC4-Xg" alt="Your Image Description">
+    </section>
+    
+
+    <!-- ... (previous code) ... -->
+
+    <section id="about">
+        <h2 style="margin-bottom: 5px;">About Me</h2>
+        <p style="font-size: 21px; margin-bottom: 1px;">Eager electrical engineer, passionate about innovation and learning. Ready to bring fresh ideas to the field and make a positive impact.</p>
+        <!-- Your about me content goes here -->
+    </section>
+    
+    <!-- ... (remaining code) ... -->
+
+    <div class="project-container">
+        <div class="project-title">
+            <h2>Projects</h2>
+        </div>
+
+        <section id="project1" class="project-section">
+            <h3>Project 1: Dual Axis Solar Tracker</h3>
+            <p>
+                A solar tracker that mimics the movement of a sunflower, optimizing solar panel orientation for maximum sunlight absorption.
+            </p>
+            <!-- Additional details about Project 1 can be added here -->
+        </section>
+
+        <section id="project2" class="project-section">
+            <h3>Project 2: Digital Twin for Solar Tracker</h3>
+            <p>
+                Created a digital twin for the solar tracker, enabling simulation and analysis under diverse climate conditions, including rainy days.
+            </p>
+            <!-- Additional details about Project 2 can be added here -->
+        </section>
+    </div>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-form">
+            <input type="text" placeholder="First Name">
+            <input type="text" placeholder="Last Name">
+            <input type="email" placeholder="Email">
+            <input type="tel" placeholder="Phone Number">
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Submit</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-column">
+            <h3>About Me</h3>
+            <p>Eager electrical engineer, passionate about innovation and learning. Ready to bring fresh ideas to the field and make a positive impact.</p>
+        </div>
+        <div class="footer-column">
+            <h3>Contact Me</h3>
+            <p>Shamita R | Phone: 9751953755</p>
+        </div>
+        <div class="footer-column social-media">
+            <h3> Social Media</h3>
+            <br><br><br><p>
+            <a href="https://github.com/shamita121004 target="_blank">
+                <img src="https://icon-library.com/images/github-icon-white/github-icon-white-5.jpg" alt="GitHub Logo">
+            </a>
+            <a href="https://www.linkedin.com/in/shamita-r-4999a1250/ target="_blank">
+                <img src="https://pngimg.com/uploads/linkedIn/linkedIn_PNG7.png" alt="LinkedIn Logo">
+            </a></p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu(event) {
+            event.preventDefault();
+            var body = document.querySelector("body");
+            var nav = document.querySelector("nav");
+            var menuButton = document.querySelector(".menu-button");
+
+            body.classList.toggle("menu-open");
+            nav.classList.toggle("menu-open");
+
+            if (nav.style.left === "0px") {
+                nav.style.left = "-200px";
+                body.style.marginLeft = "0";
+            } else {
+                nav.style.left = "0";
+                body.style.marginLeft = "200px"; /* Adjust the margin based on your menu width */
+            }
+        }
+
+        var navLinks = document.querySelectorAll("nav a");
+        navLinks.forEach(function (link) {
+            link.addEventListener("click", function (event) {
+                event.preventDefault();
+                var targetId = this.getAttribute("href").substring(1);
+                var targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    var body = document.querySelector("body");
+                    var nav = document.querySelector("nav");
+
+                    body.classList.remove("menu-open");
+                    nav.classList.remove("menu-open");
+                    nav.style.left = "-200px";
+                    body.style.marginLeft = "0";
+
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: "smooth"
+                    });
+                }
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            var footer = document.querySelector("footer");
+
+            window.addEventListener("scroll", function () {
+                if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+                    footer.style.display = "flex";
+                } else {
+                    footer.style.display = "none";
+                }
+            });
+
+            var menuButton = document.querySelector(".menu-button");
+            if (menuButton) {
+                menuButton.style.display = "block";
+            }
+        });
+    </script>
+    <script>
+        function openResume() {
+            window.open("file:///C:/Users/Shamita/Pictures/cv.pdf", "_blank");
+        }
+    </script>
+    
+</body>
+
+</html>
